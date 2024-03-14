@@ -1,5 +1,4 @@
 import java.awt.*;
-import java.awt.event.InputEvent;
 import java.util.Calendar;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -23,7 +22,7 @@ public class Main {
             TimerTask task = new TimerTask() {
                 @Override
                 public void run() {
-                    checkMouseMovement(robot, calendar, timer);
+                    checkMouseMovement(robot, calendar, timer, () -> moveMouse(robot));
                 }
             };
 
@@ -33,7 +32,7 @@ public class Main {
         }
     }
 
-    private static void checkMouseMovement(Robot robot, Calendar calendar, Timer timer) {
+    private static void checkMouseMovement(Robot robot, Calendar calendar, Timer timer, Runnable mouseMoveCallback) {
         Point startingPosition = MouseInfo.getPointerInfo().getLocation();
         System.out.println("Sleeping for 1 minute...");
         try {
@@ -55,9 +54,7 @@ public class Main {
         } else {
             System.out.println("Mouse not moving");
             System.out.println("Moving mouse for you");
-            robot.mouseMove((int) currentPosition.getX(), (int) (currentPosition.getY() + 100));
-            robot.mouseMove((int) currentPosition.getX(), (int) (currentPosition.getY() - 100));
-            System.out.println("Pressing shift 3 times");
+            mouseMoveCallback.run();
             System.out.println("Movement made at " + Calendar.getInstance().getTime() + " to position " + currentPosition);
         }
 
@@ -75,5 +72,11 @@ public class Main {
             timer.cancel();
             System.out.println("Work hours over. Exiting program.");
         }
+    }
+
+    public static void moveMouse(Robot robot) {
+        Point currentPosition = MouseInfo.getPointerInfo().getLocation();
+        robot.mouseMove((int) currentPosition.getX(), (int) (currentPosition.getY() + 100));
+        robot.mouseMove((int) currentPosition.getX(), (int) (currentPosition.getY() - 100));
     }
 }
