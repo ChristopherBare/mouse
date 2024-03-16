@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21a51710-4f67-4518-990a-c0bf9104006d" name="Changes" comment="Updated logic for improved functionality.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mouse.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+    <list default="true" id="21a51710-4f67-4518-990a-c0bf9104006d" name="Changes" comment="Moved idea folder into java">
+      <change beforePath="$PROJECT_DIR$/java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +51,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/java" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <option name="ENV_FILES" value="" />
@@ -160,6 +163,7 @@
       <updated>1710361568203</updated>
       <workItem from="1710361569243" duration="2967000" />
       <workItem from="1710381032847" duration="741000" />
+      <workItem from="1710509621581" duration="1364000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -177,7 +181,23 @@
       <option name="project" value="LOCAL" />
       <updated>1710379785901</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Updated folder structure and added python and ruby versions.">
+      <option name="closed" value="true" />
+      <created>1710509715716</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1710509715716</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Moved idea folder into java">
+      <option name="closed" value="true" />
+      <created>1710509755610</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1710509755610</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +206,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init commit" />
     <MESSAGE value="Updated logic for improved functionality." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated logic for improved functionality." />
+    <MESSAGE value="Updated folder structure and added python and ruby versions." />
+    <MESSAGE value="Moved idea folder into java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved idea folder into java" />
   </component>
 </project>
